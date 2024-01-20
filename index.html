@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./style/main.css">
+
+  <script src="./script/main.js"></script>
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+<body class="theme-1">
+
+  <section class="container">
+    <section class="cal-header">
+      <h2>calc</h2>
+      <section class="themc">
+        <p>theme</p>
+        <div class="seeker">
+          <section class="t-list">
+            <p onclick="set_theme('theme-'+this.innerText)">1</p>
+            <p onclick="set_theme('theme-'+this.innerText)">2</p>
+            <p onclick="set_theme('theme-'+this.innerText)">3</p>
+          </section>
+        </div>
+
+      </section>
+    </section>
+    <section class="calc-display">
+      <h3 id="math">0</h3>
+    </section>
+    <section class="calc-keyboard">
+      <section class="keys">
+        <button onclick="insert_math(this.innerText)" class="key">7</button>
+        <button onclick="insert_math(this.innerText)" class="key">8</button>
+        <button onclick="insert_math(this.innerText)" class="key">9</button>
+        <button onclick="del_math(this.innerText)" class="key kb">DEL</button>
+        <button onclick="insert_math(this.innerText)" class="key">4</button>
+        <button onclick="insert_math(this.innerText)" class="key">5</button>
+        <button onclick="insert_math(this.innerText)" class="key">6</button>
+        <button onclick="insert_math(this.innerText)" class="key">+</button>
+        <button onclick="insert_math(this.innerText)" class="key">1</button>
+        <button onclick="insert_math(this.innerText)" class="key">2</button>
+        <button onclick="insert_math(this.innerText)" class="key">3</button>
+        <button onclick="insert_math(this.innerText)" class="key">-</button>
+        <button onclick="insert_math(this.innerText)" class="key">.</button>
+        <button onclick="insert_math(this.innerText)" class="key">0</button>
+        <button onclick="insert_math(this.innerText)" class="key">/</button>
+        <button onclick="insert_math(this.innerText)" class="key">x</button>
+
+      </section>
+      <section class="actions">
+        <button class="key kb" onclick="reset()">RESET</button>
+        <button class="key rb" onclick="evt()">=</button>
+      </section>
+    </section>
+  </section>
+
+</body>
+</html>
